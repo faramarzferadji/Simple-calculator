@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+      app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number1"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCalculator"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/textNum1"
+        app:layout_constraintLeft_toRightOf="@id/textNum1"
+        app:layout_constraintTop_toTopOf="@id/textNum1"
+        />
+
+    <TextView
+        android:id="@+id/textNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number2"
+        app:layout_constraintTop_toBottomOf="@id/textNum1"
+        app:layout_constraintStart_toStartOf="@id/textNum1"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+       app:layout_constraintTop_toTopOf="@id/textNum2"
+        app:layout_constraintBottom_toBottomOf="@id/textNum2"
+        app:layout_constraintStart_toStartOf="@id/editTextNum1"
+        />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintStart_toStartOf="@id/textNum2"
+        app:layout_constraintTop_toBottomOf="@id/textNum2"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/textResult"
+        app:layout_constraintBottom_toBottomOf="@id/textResult"
+        app:layout_constraintEnd_toEndOf="@id/editTextNum2"
+        />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textResult"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintTop_toTopOf="@id/buttonAdd"
+        app:layout_constraintBottom_toBottomOf="@id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="@id/editTextResult"
+        />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@id/buttonAdd"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/buttonMulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multypel"
+        app:layout_constraintBottom_toTopOf="@id/buttonSub"
+        app:layout_constraintStart_toStartOf="@id/buttonSub"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/buttonDivid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divaid"
+        app:layout_constraintBottom_toTopOf="@id/buttonMulty"
+        app:layout_constraintStart_toStartOf="@id/buttonMulty"
+        android:layout_marginBottom="30dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
