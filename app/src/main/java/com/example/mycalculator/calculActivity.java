@@ -82,7 +82,11 @@ public class calculActivity extends AppCompatActivity implements View.OnClickLis
             }
 
             case R.id.buttonClear:{
-                finish();
+                
+                editTextREsult.setText("");
+                editTextNUm1.setText("");
+                editTextNUm2.setText("");
+             //   finish();
                 break;
             }
         }
